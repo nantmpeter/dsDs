@@ -2,7 +2,7 @@
 	<view>
 		<uni-segmented-control :current="current" :values="items" @clickItem="onClickItem" styleType="button" activeColor="#4cd964"></uni-segmented-control>
 		<uni-list>
-		    <uni-list-item v-for="(item, index) in this.list" :key="item.id"  :title="item.title" :show-badge="true" :badge-text="item.status" v-show="statusShowMap[item.status] == current?true:false" ></uni-list-item>
+		    <uni-list-item v-for="(item, index) in list" :key="item.id"  :title="item.title" :show-badge="true" :badge-text="item.status" v-show="statusShowMap[item.status] == current?true:false" ></uni-list-item>
 		</uni-list>
 		 <!-- <uni-load-more @clickLoadMore="loadMore()" :status="more"></uni-load-more> -->
 		 <uni-fab

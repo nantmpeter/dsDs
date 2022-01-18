@@ -1,13 +1,13 @@
 <template>
 	<view>
 		<uni-forms :modelValue="login">
-			<uni-forms-item required label="" name="address">
+			<uni-forms-item required label="地址" name="address">
 				<uni-easyinput type="text" v-model="login.address" placeholder="请输入地址" />
 			</uni-forms-item>
-			<uni-forms-item required label="" name="username">
+			<uni-forms-item required label="用户名" name="username">
 				<uni-easyinput type="text" v-model="login.username" placeholder="请输入账户" />
 			</uni-forms-item>
-			<uni-forms-item required label="" name="password">
+			<uni-forms-item required label="密码" name="password">
 				<uni-easyinput type="text" v-model="login.password" placeholder="请输入密码" />
 			</uni-forms-item>
 		</uni-forms>

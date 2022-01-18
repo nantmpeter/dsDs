@@ -1,10 +1,10 @@
 <template>
 	<view>
 		<uni-forms :modelValue="create">
-			<uni-forms-item required label="" name="uri">
+			<uni-forms-item required label="下载链接" name="uri">
 				<uni-easyinput type="text" v-model="create.uri" placeholder="请输入" />
 			</uni-forms-item>
-			<uni-forms-item required label="" name="destination">
+			<uni-forms-item required label="nas位置" name="destination">
 				<uni-easyinput type="text" v-model="create.destination" placeholder="请输入" />
 			</uni-forms-item>
 		</uni-forms>
